@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #F1F4F7;
+  font-family: 'Open Sans', Arial, 'Helvetica', sans-serif;
+  font-size: 13px;
+  color: #01244b;
+}
+.wrapper {
+  max-width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/*
+ * Helper Classes & ID
+**/
+.text-center {
+  text-align: center;
+}
+.font-bold {
+  font-weight: bold;
+}
+.block {
+  display: block;
+}
+.pull-left {
+  float: left;
+}
+.m-r-sm {
+  margin-right: 5px;
+}
+.m-r-md {
+  margin-right: 15px;
+}
+.m-b-sm {
+  margin-bottom: 5px;
+}
+.m-b-md {
+  margin-bottom: 15px;
+}
+
+/*
+ * UI KIT 
+**/
+.btn-primary {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 9px;
+  background-color: #465c7d;
+  border-top: solid 1px #4f6484;
+  border-bottom: solid 1px #1c3f5b;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.btn-primary:active {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.btn-download {
+  min-width: 145px;
+}
+
+/*
+ * Popup Layout
+**/
+.music {
+  position: relative;
+  overflow: hidden;
+}
+.music .music-cover {
+  width: 55px;
+  overflow: hidden;
+  margin-right: 6px;
+}
+.music .music-cover img {
+  border-radius: 2px;
+  width: 100%;
+}
+.music-details {
+  display: block;
+  max-width: 100px;
+  line-height: 1.3;
+}
+.music-label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

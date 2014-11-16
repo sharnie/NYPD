@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pandora Downloader",
+  "description": "Download your favorite song from Pandora with one-click",
+  "version": "1.0",
+
+  "content_scripts": [{
+      "js": ["jquery.js", "contentscript.js"],
+      "matches": ["*://pandora.com/*", "*://www.pandora.com/*"],
+      "run_at": "document_end"
+  }],
+
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+
+  "web_accessible_resources": ["script.js"],
+  "permissions": ["background", "tabs", "webNavigation", "webRequest", "http://*/", "https://*/"],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
