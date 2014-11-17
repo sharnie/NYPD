@@ -4,7 +4,7 @@ var UI = {
         var template = [
             '<section class="music m-b-sm">',
                 '<div class="music-cover pull-left m-r-sm">',
-                  '<img id="art" src="'+ (last.art || 'http://www.pandora.com/img/no_album_art.png') +'" alt="" />',
+                  '<img id="art" src="'+ last.art +'" alt="" />',
                 '</div>',
                 '<div class="music-details pull-left">',
                   '<div id="song-title" class="music-label font-bold">'+ last.song +'</div>',
@@ -14,7 +14,8 @@ var UI = {
             '</section>',
             '<a href="'+ last.url +'" id="download-btn" class="btn-primary font-bold text-center block btn-download"download="'+ (last.song + ' - ' + last.artist + ' - ' + last.album + '.mp4') +'">Download</a>'
         ];
-        document.getElementById('content').innerHTML = template.join("\n");
+        template = template.join("\n");
+        document.getElementById('content').innerHTML = template;
     }
 };
 

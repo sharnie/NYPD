@@ -16,7 +16,6 @@ var listParser = {
             if( message.from === 'background' ) {
                 _this.listTracker( message.audio_url );
             }
-
             if( message.from === 'popup' ) {
                 sendResponse(PLAYLIST_);
             }
@@ -49,14 +48,13 @@ var listParser = {
                 var songTitle  = document.getElementsByClassName('songTitle'),
                     artistName = document.getElementsByClassName('artistSummary'),
                     albumTitle = document.getElementsByClassName('albumTitle');
-
                 if( songTitle.length && artistName.length && albumTitle.length ) {
                     songTitle  = songTitle[0].innerHTML;
                     artistName = artistName[0].innerHTML;
                     albumTitle = albumTitle[0].innerHTML;
-
                     if( songTitle.length && artistName.length && albumTitle.length ) {
                         albumArt = $('.playerBarArt[src]').attr('src');
+                        albumArt = albumArt.indexOf("no_album_art") === -1 ? albumArt : 'http://www.pandora.com/img/no_album_art.png';
                         listParser.addSong({
                             id:     listParser.utf8_to_b64( songTitle + artistName ),
                             song:   songTitle,
