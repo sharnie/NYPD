@@ -12,7 +12,7 @@ var UI = {
                   '<div id="album-title" class="music-label">'+ last.album +'</div>',
                 '</div>',
             '</section>',
-            '<a href="'+ last.url +'" id="download-btn" class="btn-primary font-bold text-center block btn-download"download="'+ (last.song + ' - ' + last.artist + ' - ' + last.album + '.mp4') +'">Download</a>'
+            '<a href="'+ last.url +'" id="download-btn" class="btn-primary font-bold text-center block btn-download" download="'+ (last.song + ' - ' + last.artist + ' - ' + last.album + '.mp4') +'">Download</a>'
         ];
         template = template.join("\n");
         document.getElementById('content').innerHTML = template;
