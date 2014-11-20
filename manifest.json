@@ -3,7 +3,7 @@
 
   "name": "Pandora Downloader",
   "description": "Download your favorite song from Pandora with one-click",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "content_scripts": [{
       "js": ["jquery.js", "contentscript.js"],
@@ -22,5 +22,11 @@
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
+  },
+
+  "icons": { 
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
 }
