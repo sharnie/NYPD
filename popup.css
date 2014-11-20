@@ -70,6 +70,9 @@ body {
 /*
  * Popup Layout
 **/
+#content {
+  overflow: hidden;
+}
 .music {
   position: relative;
   overflow: hidden;
@@ -93,4 +96,11 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.audio-url {
+  width: 143px;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 5px;
+  color: #465c7d;
 }
