@@ -15,8 +15,7 @@ var UI = {
             '<a href="'+ last.url +'" id="download-btn" class="btn-primary font-bold text-center block btn-download" download="'+ (last.artist + ' - ' + last.song + ' - ' + last.album + '.mp4') +'">Download</a>',
             '<input type="text" value="'+ last.url +'" class="audio-url" />'
         ];
-        template = template.join("\n");
-        document.getElementById('content').innerHTML = template;
+        document.getElementById('content').innerHTML = template.join("\n");
     }
 };
 
