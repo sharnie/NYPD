@@ -13,11 +13,14 @@ var listParser = {
     onMessage: function() {
         var _this = this;
         chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-            if( message.from === 'background' ) {
+            if ( message.from === 'background' ) {
                 _this.listTracker( message.audio_url );
             }
-            if( message.from === 'popup' ) {
+            if ( message.from === 'popup' ) {
                 sendResponse(PLAYLIST_);
+            }
+            if ( message.from === 'popup' && message.command === 'skip song' ) {
+                document.querySelector( '.skipButton' ).click();
             }
         });
     },

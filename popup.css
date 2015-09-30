@@ -64,7 +64,13 @@ body {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 .btn-download {
-  min-width: 145px;
+  width: 60px;
+  display: inline-block;
+}
+.btn-next {
+  width: 60px;
+  display: inline-block;
+  float: right;
 }
 
 /*
